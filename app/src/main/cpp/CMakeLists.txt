@@ -27,25 +27,27 @@ project("eventsaddin")
 add_library(${CMAKE_PROJECT_NAME} SHARED
         # List C/C++ source files with relative paths to this CMakeLists.txt.
         native-lib.cpp
-        # /jni/*
-        /jni/jnienv.h
-        /jni/jnienv.cpp,
-        # /include/*
-        /include/stdafx.h
-        /include/stdafx.cpp
-        /include/AddInNative.cpp
-        /include/AddInNative.h
-        /include/dllmain.cpp
-        /include/ConversionWchar.cpp,
-        /include/ConversionWchar.h
-        /include/AddInNative.def
-        /include/AddInDefBase.h
-        /include/addinlib.h
-        /include/com.h
-        /include/ComponentBase.h
-        /include/IAndroidComponentHelper.h
-        /include/IMemoryManager.h
-        /include/types.h)
+        # jni/*
+        jni/jnienv.h
+        jni/jnienv.cpp
+        # include/*
+        include/stdafx.h
+        include/stdafx.cpp
+        include/AddInNative.cpp
+        include/AddInNative.h
+        include/dllmain.cpp
+        include/ConversionWchar.cpp
+        include/ConversionWchar.h
+        include/AddInNative.def
+        include/AddInDefBase.h
+        include/addinlib.h
+        include/com.h
+        include/ComponentBase.h
+        include/IAndroidComponentHelper.h
+        include/IMemoryManager.h
+        include/types.h
+        include/mobile.h
+        )
 
 # Specifies libraries CMake should link to your target library. You
 # can link libraries from various origins, such as libraries defined in this
